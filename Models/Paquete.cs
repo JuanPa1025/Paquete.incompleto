@@ -43,6 +43,7 @@ public partial class Paquete
     [Required(ErrorMessage = "Es necesario seleccionar un servicio para crear el paquete.")]
     public int? Idservicio { get ; set; }
 
+    [DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
     public double? Precio { get; set; }
 
     public bool Estado { get; set; }
